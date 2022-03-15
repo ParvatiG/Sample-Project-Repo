@@ -1,0 +1,14 @@
+ node {
+    stage ('Repo-Clone') {
+        git url: 'https://github.com/ParvatiG/Sample-Project-Repo.git'
+    }
+    
+    stage ('Print YAML File') {
+        //steps{
+             sh '''
+                echo 'Printing content of YAML file'
+                sh cat.sh
+                '''
+            }
+        }
+ //   }
