@@ -1,0 +1,11 @@
+node{
+    stage ('Repo-Clone') {
+        git url: 'https://github.com/ParvatiG/Sample-Project-Repo.git'
+    }
+    stage('Read'){
+       // step {
+            env.WORKSPACE = pwd()
+            def line = readFile "${env.WORKSPACE}/sample.yml"
+            println line
+        }
+     }
