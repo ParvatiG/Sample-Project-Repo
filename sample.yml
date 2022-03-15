@@ -1,3 +1,4 @@
+# Added sample SCRIPT For CREATE UER
 ---
 - name: this playbook is to create user
   hosts: all
