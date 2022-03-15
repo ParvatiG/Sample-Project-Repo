@@ -6,4 +6,4 @@
   tasks:
   - name: creating user tom
     user: 
-      name: tom
+      name: tom  #This playbook is used to create TOM USer
